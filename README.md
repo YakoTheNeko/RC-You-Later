@@ -4,7 +4,7 @@ Bonjour, j'espère que cet examen sera plus facile à comprendre que le précéd
 
 Il se compose en deux parties : une partie strict (10 points) et une partie libre (10 points).
 
-Tu as jusqu'à **Mardi 31 Mars 2026 à 23h59** pour rendre se devoir.
+Tu as jusqu'à **Mardi 31 Mars 2026 à 23h59** pour rendre ce devoir.
 
 Comme le dernier, fait un fork de ce projet sur pour te créer ta copie.
 
@@ -24,9 +24,9 @@ J'ai créé une méthode `Load` dans le même script. Elle est appelée automati
 
 Points bonus :
 
-3. **2 Points** : Trouve un moyen de ne sauvegarder le temps du joueur seulement s'il bat le record sauvegardé.
+3. **2 Points** : Trouve un moyen de ne sauvegarder le temps (et les étapes) du joueur seulement s'il bat le temps final record déjà sauvegardé.
 
-4. **4 Points** (pour les fans du code): Vu que c'est un score on aimerait le "protéger" afin que des petits malins ne viennent pas modifier le fichier à la main. Trouve un moyen de protéger le fichier. Un simple encryptage en [Base64]([C# Base64 - encoding/decoding binary data to/from Base64](https://zetcode.com/csharp/base64/)) ou sauvegarder en [Binaire]([BinaryWriter Classe (System.IO) | Microsoft Learn](https://learn.microsoft.com/fr-fr/dotnet/api/system.io.binarywriter?view=net-8.0)) peut suffire pour cet exercice.
+4. **4 Points** (pour les fans du code): Vu que c'est un score on aimerait le "protéger" afin que des petits malins ne viennent pas modifier le fichier à la main. Trouve un moyen de protéger le fichier. Un simple encryptage en [Base64](https://zetcode.com/csharp/base64/) ou sauvegarder en [Binaire](https://learn.microsoft.com/fr-fr/dotnet/api/system.io.binarywriter?view=net-8.0) peut suffire pour cet exercice.
 
 
 
@@ -36,48 +36,19 @@ Ici c'est roue libre !
 
 1. **10 Points** : J'aimerais que tu rajoute **ce que tu veux** dans le projet afin de l'agrémenter. Met en avant ce que tu aime ou sais faire.
 
-Ça peut-être du code, du décors, un autre niveau, de la juiciness en plus, des nouvelles fonctionnalités, des sons, de la narration (?!), du suspense, bref tout ce qui fait un jeu vidéo !
+Ça peut-être du code, du décors, des VFX, un autre niveau, de la juiciness en plus, des nouvelles fonctionnalités, des sons (musique, ambiance ou SFX), de la narration (?!), du suspense, bref tout ce qui fait un jeu vidéo !
 
 La seule contrainte est que tu y passe un peu de temps dessus (~1h30) et que tu en soit fier à la fin :)
 
+Ne te fais pas de soucis je serais gentil sur la notation de cette partie là.
+
 Et aussi rajoute à la fin de ce fichier **README.md** ce que tu a rajouté dans le projet (afin que je sois sur de bien évaluer ce que tu a rajouté).
 
-Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autres (je te recommande à nouveau le site de [Kenney]([Assets &middot; Kenney](https://kenney.nl/assets))).
+Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autres (je te recommande à nouveau le site de [Kenney](https://kenney.nl/assets).
 
 
 
 Ce que tu a rajouté dans le projet :
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
