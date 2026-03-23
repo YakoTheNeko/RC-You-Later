@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 38689ee63fbbda345a3fc4083af751a7
+folderAsset: yes
+DefaultImporter:
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colormap
+    second: {fileID: 2100000, guid: 3df92ba4a15cf8c4180aa88fe5120db5, type: 2}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

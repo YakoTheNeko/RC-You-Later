@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3df92ba4a15cf8c4180aa88fe5120db5
+NativeFormatImporter:
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: colormap
+    second: {fileID: 2100000, guid: 3df92ba4a15cf8c4180aa88fe5120db5, type: 2}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
