@@ -4,7 +4,7 @@ using System.Diagnostics;
 public static class Timer
 {
     private static readonly Stopwatch stopwatch = new();
-    private static readonly List<long> steps = new();
+    private static List<long> steps = new();
 
     public static bool IsRunning
     {
