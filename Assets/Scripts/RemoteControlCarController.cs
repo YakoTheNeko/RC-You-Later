@@ -137,6 +137,7 @@ public class RemoteControlCarController : MonoBehaviour
 
     private void FixedUpdate()
     {
+
         Vector3 linearVelocity = rigidbody.linearVelocity;
 
         // https://docs.unity3d.com/Packages/com.unity.inputsystem@1.8/manual/Workflow-Actions.html
@@ -459,6 +460,18 @@ public class RemoteControlCarController : MonoBehaviour
             Point = point;
             Normal = normal;
         }
+    }
+
+
+    public void boostCar(Vector3 dir, float force)
+    {
+        //rigidbody.AddForce(dir * force);
+        rigidbody.linearVelocity = dir * force;
+    }
+
+    public Vector3 getDir()
+    {
+        return Vector3.Normalize(rigidbody.linearVelocity);
     }
 
 }

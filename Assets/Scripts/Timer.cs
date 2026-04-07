@@ -1,7 +1,9 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Runtime.InteropServices.ComTypes;
+using UnityEditor.Overlays;
 using UnityEngine;
 
 public static class Timer
@@ -58,18 +60,35 @@ public static class Timer
         // TODO : save our time steps (line 7 of this script) inside a file.
         string savePath = Application.dataPath + "/save.txt";
 
-        FileStream streamed = new FileStream(savePath, FileMode.Create);
-        StreamWriter saveFile = new StreamWriter(streamed);
+        
 
-            
-        foreach (long step in steps)
+        if (File.Exists(savePath))
         {
-              saveFile.WriteLine(step);
+
+            string[] lines = File.ReadAllLines(savePath);
+
+            if (steps[steps.Count - 1] < long.Parse(lines[lines.Length - 1]) )
+            {
+                FileStream streamed = new FileStream(savePath, FileMode.Create);
+                StreamWriter saveFile = new StreamWriter(streamed);
+
+
+                foreach (long step in steps)
+                {
+                    saveFile.WriteLine(step);
+                }
+
+
+                saveFile.Close();
+                streamed.Close();
+
+                UnityEngine.Debug.Log("saved!");
+            }
+
         }
+            
 
-
-        saveFile.Close();
-        streamed.Close();
+        
 
 
 
