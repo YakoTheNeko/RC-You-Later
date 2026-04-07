@@ -1,5 +1,8 @@
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Runtime.InteropServices.ComTypes;
+using UnityEngine;
 
 public static class Timer
 {
@@ -53,6 +56,23 @@ public static class Timer
     public static void Save()
     {
         // TODO : save our time steps (line 7 of this script) inside a file.
+        string savePath = Application.dataPath + "/save.txt";
+
+        FileStream streamed = new FileStream(savePath, FileMode.Create);
+        StreamWriter saveFile = new StreamWriter(streamed);
+
+            
+        foreach (long step in steps)
+        {
+              saveFile.WriteLine(step);
+        }
+
+
+        saveFile.Close();
+        streamed.Close();
+
+
+
     }
 
     public static void Load()
@@ -60,5 +80,29 @@ public static class Timer
         // TODO : load our time steps from a file (if we have any)
         // and store them inside our steps variable (line 7 of this script)
         // to show them to the player before starting a race.
+
+        string savePath = Application.dataPath + "/save.txt";
+        if (File.Exists(savePath))
+        {
+            steps.Clear();
+
+            FileStream streamed = new FileStream(savePath, FileMode.Open);
+            StreamReader saveFile = new StreamReader(streamed);
+
+            while (!saveFile.EndOfStream)
+            {
+                string line = saveFile.ReadLine();
+
+                if (long.TryParse(line, out long value))
+                {
+                    steps.Add(value);
+                }
+            }
+
+            saveFile.Close();
+            streamed.Close();
+
+        }
+
     }
 }
