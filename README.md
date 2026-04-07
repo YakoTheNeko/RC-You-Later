@@ -49,7 +49,7 @@ Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autr
 
 Ce que tu a rajouté dans le projet :
 
-1- une plaque de boost qui fait accélérer le kart dans une direction
+1 - une plaque de boost qui fait accélérer le kart dans une direction
 2 - de la terre qui ralentit le kart quand on roule dessus
-
+3 - améliorer le handling du kart
 
