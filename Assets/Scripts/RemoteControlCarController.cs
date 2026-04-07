@@ -467,7 +467,10 @@ public class RemoteControlCarController : MonoBehaviour
     {
         //rigidbody.AddForce(dir * force);
         rigidbody.linearVelocity = dir * force;
+        ForwardDirection = Vector3.Normalize(rigidbody.linearVelocity);
     }
+
+
 
     public Vector3 getDir()
     {

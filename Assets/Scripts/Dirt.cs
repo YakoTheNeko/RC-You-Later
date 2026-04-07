@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class booster : MonoBehaviour
+public class Dirt : MonoBehaviour
 {
 
-    public float force = 1f;
-    public GameObject dirRef;
+    public float force = 10f;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -20,13 +20,18 @@ public class booster : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
         if (other.tag == "Player")
         {
             RemoteControlCarController carScript = other.GetComponent<RemoteControlCarController>();
 
             //Debug.Log(other.attachedRigidbody.linearVelocity);
             //carScript.boostCar(carScript.getDir(), force);
-            carScript.boostCar(dirRef.transform.forward, force);
+            carScript.boostCar(carScript.getDir(), force);
 
 
         }
