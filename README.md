@@ -45,4 +45,11 @@ Et aussi rajoute à la fin de ce fichier **README.md** ce que tu a rajouté dans
 
 Il y a quelque assets dans le dossier des Models mais tu peux en importer d'autres (je te recommande à nouveau le site de [Kenney](https://kenney.nl/assets)).
 
+==============================================================================================================================
+
 Ce que tu a rajouté dans le projet :
+
+1- une plaque de boost qui fait accélérer le kart dans une direction
+2 - de la terre qui ralentit le kart quand on roule dessus
+
+
